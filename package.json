@@ -15,7 +15,10 @@
     "@mui/icons-material": "^7.0.1",
     "@mui/material": "^7.0.1",
     "@mui/material-nextjs": "^7.0.0",
+    "highcharts": "^12.2.0",
+    "highcharts-react-official": "^3.2.1",
     "next": "15.2.5",
+    "query-string": "^9.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

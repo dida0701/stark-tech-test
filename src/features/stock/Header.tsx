@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 
-export const Header = ({ name, id }: { name: string; id: number }) => {
+export const Header = ({ name, id }: { name: string; id: string }) => {
   return (
     <Box
       sx={{
