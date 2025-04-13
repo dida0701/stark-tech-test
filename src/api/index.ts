@@ -30,6 +30,7 @@ export const getStockMonthRevenue = async ({
     data_id: stockId,
     start_date,
     end_date,
+    token: process.env.NEXT_PUBLIC_STOCK_API_TOKEN,
   });
 
   const res = await fetch(`https://api.finmindtrade.com/api/v4/data?${query}`);
@@ -49,6 +50,7 @@ export interface StockInfo {
 export const getTaiwanStockInfo = async () => {
   const query = queryString.stringify({
     dataset: "TaiwanStockInfo",
+    token: process.env.NEXT_PUBLIC_STOCK_API_TOKEN,
   });
 
   const res = await fetch(`https://api.finmindtrade.com/api/v4/data?${query}`, {
